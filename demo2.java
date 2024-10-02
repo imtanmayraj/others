@@ -3,10 +3,7 @@ class A{
 
     public void show(){
         System.out.println("in show -A");
-    }
-
-    
-  
+    }   
 }
 public class demo2 {
     public static void main(String[] args) {
