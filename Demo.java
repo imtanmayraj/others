@@ -1,7 +1,15 @@
+class tanmayException extends Exception
+{
+	public tanmayException(String string)
+	{
+		super(string);
+	}
+}
 public class Demo {
     public static void main(String[] args) {
     	
 //    	int i=2;
+//   	int i=0;
     	int i=20;
     	int j=0;
  
@@ -10,11 +18,11 @@ public class Demo {
     	{
     		j=18/i;
     		if(j==0)
-    			throw new ArithmeticException("I don't want to do print zero");
-    	
-        }
+//    			throw new Exception("I don't want to do print zero");
+    			throw new tanmayException("I don't want to do print zero");
+    	}
 
-    	catch(ArithmeticException e)
+    	catch(tanmayException e) 
     	{
     		j=18/1;
     		System.out.println("that is default output "+e);
