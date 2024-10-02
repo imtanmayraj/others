@@ -1,29 +1,36 @@
-
-
-class A
+@FunctionalInterface
+interface A
 {
-	public void showTheDataWhichBelongsToThisClass()
-	{
-		System.out.println("in show A");
-	}
+//	void show();
+	void show(int i);
+//	void show(int i,int j);
+	
+
 }
 
-class B extends A 
-{
-    @Override
-//	public void showTheDataWhichBelongToThisClass()
-	public void showTheDataWhichBelongsToThisClass()
-
-	{
-		System.out.println("in show B");
-	}
-}
 
 public class Demo {
     public static void main(String[] args) {
     	
-    	B obj=new B();
-    	obj.showTheDataWhichBelongsToThisClass();
+ //   	A obj=() -> System.out.println("in Show");  
+ //   	obj.show();
     	
+//    	A obj=new A()
+//    	{
+//    		public void show(int i)
+//    		{
+//    			System.out.println("in show"+i);
+//    		}
+//    	};
+//    	obj.show(5);
+    	
+//    	A obj=(int i) ->System.out.println("in show "+i);
+//    	obj.show(5);
+    	
+//    	A obj=(int i,int j) ->System.out.println("in show "+i);
+//    	obj.show(5,8);
+    	
+    	A obj=i -> System.out.println("in show "+i);
+    	obj.show(5);
     }
 }
