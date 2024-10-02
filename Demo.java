@@ -1,41 +1,53 @@
-class tanmayException extends Exception
+class TanmayException extends Exception
 {
-	public tanmayException(String string)
+	public TanmayException(String string)
 	{
 		super(string);
 	}
 }
+
+class A
+{
+	public void show() throws ClassNotFoundException
+	{
+//    	try
+//    	{
+//    		Class.forName("Calc");
+//    	}
+//    	catch(ClassNotFoundException e)
+//    	{
+//    		System.out.println("Not able to find theh class");
+//    	}
+		
+		Class.forName("Calc");
+	}
+}
+
 public class Demo {
+	
+	static {
+		System.out.println("Class Loader");
+	}
+	
     public static void main(String[] args) {
     	
-//    	int i=2;
-//   	int i=0;
-    	int i=20;
-    	int j=0;
- 
+//    	try
+//    	{
+//    		Class.forName("Class");
+//    	}
+//    	catch(ClassNotFoundException e)
+//    	{
+//    		System.out.println("Not able to find theh class");
+//    	}
     	
-    	try
+    	A obj=new A();
+    	try {
+    		obj.show();
+    	}catch(ClassNotFoundException e)
     	{
-    		j=18/i;
-    		if(j==0)
-//    			throw new Exception("I don't want to do print zero");
-    			throw new tanmayException("I don't want to do print zero");
-    	}
-
-    	catch(tanmayException e) 
-    	{
-    		j=18/1;
-    		System.out.println("that is default output "+e);
-
-//    		System.out.println("Cannot divide by zero");
+    		e.printStackTrace();
     	}
     	
-    	catch(Exception e)
-    	{
-  
-    		System.out.println("Something went wrong."+e);
-    	}
-    	System.out.println(j);
-    	System.out.println("Bye");
+    	
     }
 }
