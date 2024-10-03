@@ -1,89 +1,30 @@
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Comparator;
-
-
-//class Student implements Comparable<Student>
-class Student
-{
-	int age;
-	String name;
-	
-	public Student(int age, String name)
-	{
-		this.age=age;
-		this.name=name;
-	}
-	
-	public String toString() {
-		return "Student [age=" + age + ", name=" +name +"]";
-	}
-	
-//	public int CompareTo(Student that)
-//	{
-////		return 0;
-//		if(this.age >that.age)
-//			return 1;
-//		else
-//			return -1;
-//	}
-}
-	
+import java.util.stream.Stream;
+import java.util.function.Consumer;
 
 public class Demo {
     public static void main(String[] args){   
     	
-//    	Comparator<Integer> com=new Comparator<Integer>()
-//    	{
-//    		public int compare(Integer i,Integer j)
-//    		{
-//    			if(i%10 >j%10)
-//    				return 1;
-//    			else
-//    				return -1;
-//    		}
-//    	};	
+    	List<Integer> nums=Arrays.asList(4,5,7,3,2,6);
     	
-//    	List<Integer> nums= new ArrayList<>();
-//    	nums.add(43);
-//    	nums.add(31);
-//    	nums.add(72);
-//    	nums.add(29);
+//    	Stream<Integer> s1=nums.stream();
+//    	Stream<Integer> s2= s1.filter(n ->n%2==0);
+//    	Stream<Integer> s3= s2.map(n->n*2);
+//    	int result=s3.reduce(0,(c,e)->c+e);
+//    	
+//    	s2.forEach(n -> System.out.println(n));
+//    	s3.forEach(n -> System.out.println(n));
+//    	
+//    	s1.forEach(n-> System.out.println(n));
+//   	s1.forEach(n-> System.out.println(n));
     	
-   	Comparator<Student> com=new Comparator<Student>()
-   	{
-   		public int compare(Student i,Student j)
-   		{
-   			if(i.age >j.age)
-   				return 1;
-   			else
-   				return -1;
-   		}
-   	};	
+    	int result=nums.stream()
+    					.filter(n-> n%2==0)
+    					.map(n->n*2)
+    					.reduce(0, (c,e)-> c+e);
+    	System.out.println(result);
     	
-    	// Comparator<Student> com=(i,j) -> i.age > j.age?1:-1;
-     	
-    	List<Student> studs= new ArrayList<>();
-    	studs.add(new Student(21,"Tanmay"));
-    	studs.add(new Student(12,"Tushar"));
-    	studs.add(new Student(18,"Mohit"));
-    	studs.add(new Student(20,"Mayur"));
     	
-//    	Collections.sort(nums);
-//    	System.out.println(nums);
-    	
-    	// for(Student s:studs)
-    	// 	System.out.println(s);
-    	
-    	Collections.sort(studs,com);
-    	for(Student s: studs)
-    		System.out.println(s);
     }
 }
-
-
-
-
-    
-
