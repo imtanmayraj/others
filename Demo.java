@@ -1,31 +1,41 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
+import java.util.*;
 
 public class Demo {
-    public static void main(String[] args) throws IOException{   	
+    public static void main(String[] args) throws NumberFormatException, IOException {   
     	
-   	System.out.println("Enter a number");
-   	// int num=System.in.read();
+    	// int i=0;
+    	// int j=0;
+    	// try
+    	// {
+    	// 	j=18/i;
+    		
+    	// }
+    	// catch(Exception e)
+    	// {
+    	// 	System.out.println("Someting went wrong.");
+    	// 	System.out.println("Bye");
+    	// }
+    	// finally
+    	// {
+    	// 	// System.out.println("Bye");
+    	// }
     	
- 	// System.out.println(num);
-   	// System.out.println(num-48);
     	
-    	// System.out.println("Enter a number");
+    	int num=0;
+    
+    	try(BufferedReader br=new BufferedReader(new InputStreamReader(System.in)))
+    	{
+			num=Integer.parseInt(br.readLine());
+    		System.out.println(num);
     	
-   	// InputStreamReader in=new InputStreamReader(System.in);
-   	// BufferedReader bf=new BufferedReader(in);
-    	
-   	// int num=Integer.parseInt(bf.readLine());
-   	// System.out.println(num);
-  //  	BufferedReader bf=new BufferedReader(null);
-  // 	System.out.println(num-48);
-    	
-    	Scanner sc=new Scanner(System.in);
-    	int num=sc.nextInt();
-    	System.out.println(num);
-
-		sc.close();
+    	}
+    	// finally
+    	// {
+    	// 	br.close();
+    	// }
     }
+    
 }
