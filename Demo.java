@@ -1,41 +1,7 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.*;
+Threads:-
+Multiple threads run at same time in a code.
+This is known as Multithreading.
 
-public class Demo {
-    public static void main(String[] args) throws NumberFormatException, IOException {   
-    	
-    	// int i=0;
-    	// int j=0;
-    	// try
-    	// {
-    	// 	j=18/i;
-    		
-    	// }
-    	// catch(Exception e)
-    	// {
-    	// 	System.out.println("Someting went wrong.");
-    	// 	System.out.println("Bye");
-    	// }
-    	// finally
-    	// {
-    	// 	// System.out.println("Bye");
-    	// }
-    	
-    	
-    	int num=0;
-    
-    	try(BufferedReader br=new BufferedReader(new InputStreamReader(System.in)))
-    	{
-			num=Integer.parseInt(br.readLine());
-    		System.out.println(num);
-    	
-    	}
-    	// finally
-    	// {
-    	// 	br.close();
-    	// }
-    }
-    
-}
+- A thread is a smallest unit to work with. (individual task)
+- They can run parallely.
+- Multiple threads can share resources.
