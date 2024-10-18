@@ -20,13 +20,13 @@ public class StartCode {
         */
 
         //Type safe collection
-//        ArrayList<String> names = new ArrayList<String>();
-//        names.add("Durgesh");
-//        names.add("Sitara");
-//        names.add("Roshni");
-//        names.add("Vandna");
-//        names.add("Vandna");
-//        System.out.println(names);
+        ArrayList<String> names = new ArrayList<String>();
+        names.add("Durgesh");
+        names.add("Sitara");
+        names.add("Roshni");
+        names.add("Vandna");
+        names.add("Vandna");
+        System.out.println(names);
 
         //get
 //        System.out.println(names.get(0));
@@ -34,12 +34,12 @@ public class StartCode {
 
 
         //un type safe
-        LinkedList list = new LinkedList();
-        list.add("Sachin");
-        list.add(101);
-        list.add(625.5124);
-        list.add(true);
-        System.out.println(list);
+//        LinkedList list = new LinkedList();
+//        list.add("Sachin");
+//        list.add(101);
+//        list.add(625.5124);
+//        list.add(true);
+//        System.out.println(list);
 
         //remove
 //        names.remove("Roshni");
