@@ -20,18 +20,18 @@ public class TraverseExample {
             StringBuffer br=new StringBuffer(str);
             System.out.println(br.reverse());
         }
-//        System.out.println("________________________");
+        System.out.println("________________________");
 //
 //        //traversing using ITERATOR: Forward traversing
-//        Iterator<String> itr = names.iterator();
-//
-//        while(itr.hasNext())
-//        {
-//            String next = itr.next();
-//            System.out.println(next);
-//        }
-//        System.out.println("+++++++++++++++++++++++");
-//
+        Iterator<String> itr = names.iterator();
+
+        while(itr.hasNext())
+        {
+            String next = itr.next();
+            System.out.println(next);
+        }
+        System.out.println("+++++++++++++++++++++++");
+
 //        //backward traversal of collection LISTITERATOR
 //        ListIterator<String> litr = names.listIterator(names.size());
 //        while(litr.hasPrevious())
