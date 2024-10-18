@@ -48,12 +48,14 @@ public class TraverseExample {
             System.out.println(str);
         });
 //
-//        System.out.println("SORTING OF ELEMENTS");
-//        TreeSet<String> set=new TreeSet<>();
-//        set.addAll(names);
-//        set.forEach(e->{
-//            System.out.println(e);
-//        });
+        System.out.println("SORTING OF ELEMENTS");
+        TreeSet<String> set=new TreeSet<>();
+        set.addAll(names);
+
+
+        set.forEach(e->{
+            System.out.println(e);
+        });
 
 //        Comparable
 //        Comparator
