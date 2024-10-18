@@ -27,6 +27,7 @@ public class StartCode {
         names.add("Vandna");
         names.add("Vandna");
         System.out.println(names);
+        System.out.println("SIZE = " + names.size());
 
         //get
 //        System.out.println(names.get(0));
@@ -42,18 +43,18 @@ public class StartCode {
 //        System.out.println(list);
 
         //remove
-//        names.remove("Roshni");
-//
-//        System.out.println(names);
+        names.remove("Roshni");
+
+        System.out.println(names);
 //
 //        //size
 //
-//        System.out.println("SIZE = " + names.size());
+        System.out.println("SIZE = " + names.size());
 //
 //        //check item is there or not
 //        // Type ka equals method call karta hai checking karne ke lie
 //        //Student
-//        System.out.println(names.contains("Durgesh Kumar"));
+        System.out.println(names.contains("Durgesh"));
 //
 //        //check for empy
 //        System.out.println(names.isEmpty());
@@ -69,25 +70,25 @@ public class StartCode {
 //
 //        System.out.println(names);
 //
-//        Vector<String> vector = new Vector<>();
-//        vector.addAll(names);
-//
-//        System.out.println("VECTOR " + vector);
+        Vector<String> vector = new Vector<>();
+        vector.addAll(names);
+
+        System.out.println("VECTOR " + vector);
 //
 //        System.out.println("_____________________________________");
 //
-//        HashSet<Double> nms = new HashSet<>();
-//        nms.add(14.14);
-//        nms.add(34.12354);
-//        nms.add((2354.235));
-//        nms.add(99.3);
-//        nms.add(99.3);
-//        nms.add(5.3);
-//        System.out.println(nms);
+        HashSet<Double> nms = new HashSet<>();
+        nms.add(14.14);
+        nms.add(34.12354);
+        nms.add((2354.235));
+        nms.add(99.3);
+        nms.add(99.3);
+        nms.add(5.3);
+        System.out.println(nms);
 //
-//        TreeSet<Double> tset = new TreeSet<>();
-//        tset.addAll(nms);
-//        System.out.println(tset);
+        TreeSet<Double> tset = new TreeSet<>();
+        tset.addAll(nms);
+        System.out.println(tset);
 
 
     }
