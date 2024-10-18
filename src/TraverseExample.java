@@ -33,13 +33,13 @@ public class TraverseExample {
         System.out.println("+++++++++++++++++++++++");
 
 //        //backward traversal of collection LISTITERATOR
-//        ListIterator<String> litr = names.listIterator(names.size());
-//        while(litr.hasPrevious())
-//        {
-//            String previous = litr.previous();
-//            System.out.println(previous);
-//        }
-//
+        ListIterator<String> litr = names.listIterator(names.size());
+        while(litr.hasPrevious())
+        {
+            String previous = litr.previous();
+            System.out.println(previous);
+        }
+
 //        //Enumeration
 //        System.out.println("++++++++FOR EACH METHOD+++++++++++++");
 //        //for each method
