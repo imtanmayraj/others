@@ -41,12 +41,12 @@ public class TraverseExample {
         }
 
 //        //Enumeration
-//        System.out.println("++++++++FOR EACH METHOD+++++++++++++");
+        System.out.println("++++++++FOR EACH METHOD---lambda function+++++++++++++");
 //        //for each method
 //
-//        names.forEach(str->{
-//            System.out.println(str);
-//        });
+        names.forEach(str->{
+            System.out.println(str);
+        });
 //
 //        System.out.println("SORTING OF ELEMENTS");
 //        TreeSet<String> set=new TreeSet<>();
